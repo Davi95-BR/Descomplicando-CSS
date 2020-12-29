@@ -1,0 +1,4 @@
+.banner__imagem {
+	height: calc(100vh - 72px);/*Imagem 100% da tela - o cabecalho*/
+	width:100%;
+}
