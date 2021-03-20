@@ -1,0 +1,6 @@
+.imagem-carrossel {
+  object-fit: cover; /* Capa de Ajuste do Objeto 'img' em seu container sem achatar */
+  object-position: 0 80%;/* Movimentar a 'img' do seu eixo X e Y */
+  height: 400px;/*Altura*/
+}
+

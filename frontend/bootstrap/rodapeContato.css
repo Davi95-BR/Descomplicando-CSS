@@ -1,0 +1,10 @@
+
+.email__contato {
+	color:darkred;
+	transition: .1s;
+}
+
+.email__contato:hover {
+	color:yellow;
+	text-decoration: underline; 
+}

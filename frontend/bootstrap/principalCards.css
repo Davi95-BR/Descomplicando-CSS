@@ -1,0 +1,23 @@
+.card {
+	max-width: 18rem;/* Máximo de Largura do Card sem esticar no Grid*/
+}
+
+.card__botao {
+	background-color: darkred;
+	color: white;
+	transition: .2s;
+}
+
+.card__botao:hover {
+	transform: scale(1.08);
+	color: yellow;
+}
+
+.card__borda {
+	border-color: darkred;
+}
+
+.card__posicao__imagem {
+	 object-fit: cover;
+	 height: 200px;
+}

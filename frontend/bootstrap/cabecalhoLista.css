@@ -1,0 +1,22 @@
+#container__lista {
+	color: #808080;
+	margin-right: 1rem;
+	text-transform: lowercase;
+}
+
+#container__lista:active {/* Ao Clicar*/
+	color: #333333;
+	font-weight: bold;
+}
+
+#container__lista:hover { text-decoration: underline; 
+}
+
+#nav__contato { 
+	color:darkred;
+	transition: .1s;
+}
+
+#nav__contato:hover{
+	text-decoration: underline; 
+}
