@@ -1,0 +1,11 @@
+@media screen and (min-width: 0) {
+	.logo {
+		display: none;/* retirada do logo*/
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.logo {
+		display: block;/* logo visivel*/
+	}
+}

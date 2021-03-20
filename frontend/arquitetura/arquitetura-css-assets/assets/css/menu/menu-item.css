@@ -1,0 +1,9 @@
+.menu__item {
+	list-style: none; 
+	margin-right: 1.25rem;
+}
+
+.menu__item:hover {
+	text-decoration: underline;
+}
+
