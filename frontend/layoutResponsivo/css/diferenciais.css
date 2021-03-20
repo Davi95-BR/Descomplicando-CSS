@@ -1,0 +1,69 @@
+.diferencias {
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+}
+
+.diferencias__lista {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+} 
+
+.diferencias__item {
+	max-width: 350px;
+	box-sizing: border-box;
+	background-position: 1.25rem 2rem 1.5rem 2.5rem;
+}
+
+.diferenciais__item--tempo {
+	background-image: url(../img/icone-relogio.png);
+	background-repeat: no-repeat;
+	
+}
+
+.diferenciais__item--foco {
+	background-image: url(../img/icone-dinheiro.png);
+	background-repeat: no-repeat;
+}
+
+.diferenciais__item--especialista {
+	background-image: url(../img/icone-quimica.png);
+	background-repeat: no-repeat;
+}
+
+.item__titulo {
+	color: var(--cinza-escuro);
+
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+
+	margin-left: 2.5rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.item__texto {
+	line-height: normal;
+
+	margin-top: 1.5rem;
+	margin-left: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.diferenciais {
+		background-color: var(--cinza-claro);
+		padding: 3rem 0 3rem 3rem;
+	}
+
+	.diferenciais__lista {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.diferenciais__item {
+		padding-right: 2rem;
+	}
+}
