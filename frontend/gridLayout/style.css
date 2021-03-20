@@ -1,0 +1,31 @@
+.app {
+    background: #f1f1f1;
+    display: grid;/*Iniciando comportamento grid*/
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto  auto;/* 1° auto é a ocupação da página na altura | 2° auto na largura*/
+}
+
+.cabecalho {
+    display:flex;
+    align-items: center;
+    padding: 0 2rem;
+    grid-area: cabecalho;/*Associando ao grid-template-areas*/
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+    padding: 0 2rem;
+}
+
+.rodape {
+    background: #fdfdfd;
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+    grid-area: rodape;
+}

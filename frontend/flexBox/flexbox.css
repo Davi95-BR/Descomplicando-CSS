@@ -1,0 +1,187 @@
+
+/*Estilizando Cabeçalho*/
+.cabecalhoPrincipal .container {
+	display: flex;/*Cada Item do lado do outro*/
+	align-items: center;/*Alinhar verticalmente no centro*/
+	justify-content: space-between;/*Distribuindo os espaços entre os elementos*/
+}
+
+.cabecalhoPrincipal-nav {
+	display: flex;/*Cada Item do lado do outro*/
+}
+
+.cabecalhoPrincipal-nav-link-app{
+	flex-grow:6;/*Um flex item para crescer*/
+	order:-1;/*Ordem da âncora App em 1°*/
+	background: lightgreen;
+	transition: .5s;
+}
+
+.cabecalhoPrincipal-nav-link-app:hover{
+	background:  #66ff66; transform: scale(1.1);
+}
+
+/*Estilizando Cabeçalho*/
+
+
+
+/*Estilizando Rodapé*/
+.rodapePrincipal-patrocinadores .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;/*Distrui espaço em volta dos elementos*/
+	width: 70%;
+	margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+	display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+	display: flex;
+	flex-flow: column wrap;/*Flex em coluna e quebrando pra próxima*/
+	height: 250px;/*Aumentando a altura*/
+}
+
+/*Estilizando Rodapé*/
+
+
+/*Estilizando Conteúdo Principal*/
+.conteudoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;/*Joga o Flex para a Esquerda*/
+	margin-bottom: 5%;
+}
+
+.conteudoPrincipal-cursos-link{
+	width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n){
+	margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+	margin-left: 0;
+}
+
+.videoSobre .container {
+	display:flex;
+}
+
+.videoSobre-sobre{
+	text-align:center;
+	display:flex;
+	flex-direction: column;
+	flex-grow: 2;
+}
+
+.videoSobre-sobre-list{
+	flex-grow: 1;/*Aumento de espaço do Botão no final em 1x*/
+
+}
+
+.videoSobre-video{
+	flex: 1 2 45%;/* 1° grow | 2° shrink | 3° flex-basis '25% width/itens' */
+}
+/*Estilizando Conteúdo Principal*/
+
+
+
+/*Parte Mobile*/
+@media(max-width: 800px) {
+   	
+	/*Corpo Inteiro*/
+   	body{
+  		width: 100%;
+  		align-content: center;
+  	}
+  	/*Corpo Inteiro*/
+
+
+   	/*Cabeçalho*/
+   	.cabecalhoPrincipal-nav{
+   		flex-direction: column;
+   	}
+
+   .cabecalhoPrincipal .container{
+   		flex-direction: column;
+   		align-items: initial;/*Alinhamento dos Primeiros itens*/
+   		text-align: center;
+
+  	}
+
+  	.cabecalhoPrincipal-nav-link-app{
+  		order: -1;/*Trocando a posição da âncora App para a 1° posição sem alteração no HTML*/
+  		flex-grow:3;
+  	}
+	/*Cabeçalho*/
+
+
+	/*Conteúdo Principal*/
+  	.conteudoPrincipal-cursos-link {
+  		width: 100%;
+  	}
+
+  	.conteudoPrincipal-cursos-link{
+  		margin-bottom: 8%;
+  	}
+
+  	.videoSobre .container {
+  		flex-direction: column;
+  	}
+
+  	.videoSobre{
+  		margin: 0 auto;
+  	}
+  
+  	.videoSobre, .videoSobre-video{
+  		flex-shrink: 0;/*O vídeo não diminuirá de tamanho*/
+  		text-align: center;
+  	}
+
+  	.videoSobre-button{
+  		margin-right: 0;
+  	}
+  	/*Conteúdo Principal*/
+
+
+
+  	/*Rodapé */
+  	.rodapePrincipal-navMap-list{
+  		height: auto;
+  	}
+
+  	.rodapePrincipal-patrocinadores, .container{
+  		flex-flow: column wrap;
+  		align-items: center;
+  		width: 100%;
+  	}
+
+  	.rodapePrincipal-patrocinadores-list{
+  		margin: 0;
+  		width:100%;
+  	}
+
+  	.rodapePrincipal-contatoForm{
+  		width: 100%;
+  		flex-direction: column;
+  	}
+
+  	.rodapePrincipal-contatoForm-fieldset {
+  		justify-content: center;
+  	}
+  	/*Rodapé */
+}
+/*Parte Mobile*/

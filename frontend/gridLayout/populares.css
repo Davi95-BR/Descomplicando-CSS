@@ -1,0 +1,83 @@
+.populares{
+	padding: 3rem 0;/* 1° cima e embaixo | 2° esquerda e direita */
+
+
+}
+
+.populares__conteudo{
+	display: flex;/*Passando pra class o acesso ao flexbox*/
+	flex-wrap: wrap;
+	grid-area: conteudo;/*Associando ao segundo grid*/
+	padding: 1rem 0;
+
+
+}
+.populares__card{
+	background: #fdfdfd;
+	display: grid;
+	grid-template-areas:
+		'card-imagem'
+		'card-corpo';
+	grid-template-column: 100%;
+	grid-template-rows: 173px auto;/*Primeira linha da imagem com 173px e o conteúdo auto*/
+	margin-right: 1rem;
+	width:calc(20% - 1rem);/*Colocando espaço de cada card e seu espaço entre cada um*/
+}
+
+.populares__card___imagem{
+	grid-area: card-imagem;/*Associando ao grid-template-areas*/
+	width: 100%;
+	height:100%;
+}
+
+.populares__card___corpo{
+	display: grid;/*Criando um grid*/
+	grid-area: card-corpo;
+	grid-row-gap: .5rem;/*Espaço entre as linhas do corpo*/
+	grid-template-areas:
+	'card-corpo'
+	'card-conteudo';
+	grid-template-rows: 50px auto;/*Caixa de espaço do cabeçalho corpo*/
+	padding: .75rem;
+}
+
+.populares__cabecalho {
+	border-bottom: 1px solid #dcdcdc;
+	display: flex;
+	justify-content: space-between;
+}
+
+.populares__card___titulo{
+	font-size: 1.5rem;
+	color: #333333;
+}
+
+.populares__card__data{
+	font-size: .9rem;
+	color: #808080;	
+}
+
+.populares__card___descricao {
+	color: #333333;
+	line-height: 1.5rem;
+	margin: 1rem 0;
+	text-align: center;
+
+}
+
+.populares__card:last-child {
+	margin-right: 0;
+}
+
+.populares__card___titulo{
+	font-weight: 500;
+}
+
+.populares__botao {
+	background: transparent;
+	 border: none;
+	 color: green;
+}
+
+
+
